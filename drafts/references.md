@@ -1,11 +1,3 @@
-
-References:
-
-1. Interstate Technology & Regulatory Council (ITRC). (2023, September). PFAS — Per-and Polyfluoroalkyl Substances: Section 4 — Physical and Chemical Properties. Retrieved from https://pfas-1.itrcweb.org/4-physical-and-chemical-properties/
-
-2. (Authors). (2018). Main text_R1_2017-06-27. HAL. https://hal.science/hal-02067250/file/Main%20text_R1_2017-06-27.pdf 
-   DOI: https://doi.org/10.1016/j.envres.2018.10.017
-
 3. U.S. Environmental Protection Agency (EPA). (2025, May 21). Per- and Polyfluoroalkyl Substances (PFAS). In Safe Drinking Water Act (SDWA). Retrieved from https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas
 
 4. Wikipedia contributors. (n.d.). PFAS. In Wikipedia, The Free Encyclopedia. Retrieved September 19, 2025, from https://en.wikipedia.org/wiki/PFAS
@@ -27,3 +19,13 @@ References:
 12. Yousif, E., & Haddad, R. (2013). Photodegradation and photostabilization of polymers. SpringerPlus, 2(398). https://doi.org/10.1186/2193-1801-2-398
 
 13. Chandra, S., et al. (2024). Microplastics in water: Occurrence, fate and removal. Science of the Total Environment, 934, Article 165515. https://doi.org/10.1016/j.scitotenv.2024.165515
+
+
+
+
+
+
+
+
+
+
