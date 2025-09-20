@@ -1,4 +1,4 @@
-One of the new emerging issues that's a possible threat to our water supply is PFAS.
+One of the newer contaminants to emerge as a contaminant in the water supply is a class of chemicals known as PFAS which stands for “per and polyfluoroalkyl substances.” PFAS are comprised of a wide variety of molecules with different physical and chemical properties and molecular weights with perfluoroalkyl moieties as common structural features. The exact definition is somewhat unclear as there's thousands of molecules considered in the PFAS classification and the boundaries are somewhat grey.  The essential idea behind PFAS is the fact they are flourinated carbon alkanes with a structure consisting of a carbon backbone that is fully or mostly saturated with Flourine and either no or some other functional groups.
 
 ### PFAS Chemistry
 PFAS stands for Per- and Polyfluoroalkyl Substances.  
@@ -9,7 +9,7 @@ For example: a normal fatty acid like octanoic acid (C₇H₁₅COOH) has hydrog
 Its PFAS cousin PFOA (perfluorooctanoic acid, C₇F₁₅COOH) has all those hydrogens replaced by fluorines.
 PFAS are commonly produced through one of two processes— electrochemical fluorination or fluorotelomerization [5]
 
-While both H and F are similar in how they can bond to Carbon with their single valence electron, their differences are stark.
+While both H and F are similar in how they can bond to Carbon with their single valence electron, their differences in molecular form are stark.
 
 1. Strength: 
     * The Fluorine bonds are extremely strong bonds.
@@ -19,7 +19,7 @@ While both H and F are similar in how they can bond to Carbon with their single 
 
 2. Electronegativity: 
     * Fluorine is the most electronegative element in Chemistry so it pulls the electrons strongly towards it from the carbon atom, which gives Flouralkyl molecules several interesting characteristics.
-        * There's strong inductive effects from the Flourines along the Carbon backbone and CF3CF2OH(pH approx 6) is much stronger acid than it's ethanol(pH approx 6) cousin.
+        * There are strong inductive effects from the Flourines along the Carbon backbone and CF3CF2OH(pH approx 6) is much stronger acid than it's ethanol(pH approx 6) cousin.
         * Fl bonds are highly polarized and have weak van der walls forces due to the flourine pulling the electrons so close, which means that in a fluoroalkyl chain a number of these bonds adds up to make the molecule have extremely low surface energy. This makes the molecule exceptionally resistant to interacting with any other molecules whether through dipole, london dispersion, or hydrogen bonds. They are the introverts of molecules. 
 
 These properties create a PFAS molecule that is extremely durable and extremely resistant to chemicals, temperature, sunlight, biodegradation, and repels both oil and water.
@@ -29,7 +29,7 @@ Studies have reported less-than-complete destruction of PFAS at high operating t
 ### PFAS Usage 
 
 PFAS products are widely used. In 2020, the United States manufactured or imported approximately 2.9 billion pounds of PFAS. [5]
-PFAS molecules are great for giving corrosion resistance and abrasion resistance, hydrophobicity, leveling, spreading, and wetting. They are used in products including waterproof fabric such as nylon, yoga pants, carpets, shampoo, feminine hygiene products, mobile phone screens, wall paint, furniture, adhesives, food packaging, firefighting foam, and the insulation of electrical wire. PFAS are also used by the cosmetic industry in most cosmetics and personal care products, including lipstick, eye liner, mascara, foundation, concealer, lip balm, blush, and nail polish(4, 5) For more details on it's usage in the population see this white paper: [4, 5]
+PFAS molecules are great for giving corrosion resistance and abrasion resistance, hydrophobicity, leveling, spreading, and wetting. Examples usage in products includes waterproof fabric such as nylon, yoga pants, carpets, shampoo, feminine hygiene products, mobile phone screens, wall paint, furniture, adhesives, food packaging, firefighting foam, and the insulation of electrical wire. PFAS are also used by the cosmetic industry in most cosmetics and personal care products, including lipstick, eye liner, mascara, foundation, concealer, lip balm, blush, and nail polish(4, 5) For more details on it's usage in the population see this white paper: [4, 5]
 
 
 ### PFAS Lifecycle and routes of exposure

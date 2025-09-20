@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <style>
+      body {
+      padding: 2rem;     /* adds space inside the page */
+      font-family: Georgia, serif;
+      line-height: 1.5;
+    }
+    #references>li {
+      margin-bottom: 1em;
+      /* space after each reference */
+      line-height: 1.4;
+      /* looser line height */
+    }
+
+    table {
+      border-collapse: collapse;
+      /* merge adjacent borders */
+      width: 100%;
+      /* optional, full width */
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      /* 1px border all around */
+      padding: 6px;
+      /* breathing room */
+      text-align: left;
+      /* optional */
+    }
+
+    th {
+      background: #f2f2f2;
+      /* optional header shading */
+    }
+     @media print {
+    /* Start the table on a fresh page (optional) */
+    .break-before-page { break-before: page; page-break-before: always; }
+
+    /* Strongly discourage breaking inside */
+    .onepage,
+    .onepage * {
+      break-inside: avoid;
+      page-break-inside: avoid;   /* legacy alias */
+    }
+
+    /* Make sure a parent wrapper isn't forcing a split */
+    .onepage-wrap {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      overflow: visible !important; /* avoid clipped/fragmented print */
+    }
+
+    /* Shrink a bit so it actually fits on one page */
+    table.onepage {
+      font-size: 10pt;          /* adjust as needed */
+    }
+    table.onepage th, table.onepage td {
+      padding: 2pt 4pt;         /* smaller cell padding for print */
+    }
+
+    /* If Chrome still splits it, last resort: prevent pagination by making it inline-block.
+       (Warning: if the table is taller than the page, the bottom will overflow off the page.) */
+    .no-split-fallback table.onepage {
+      display: inline-block;
+    }
+
+    /* Optional page settings */
+    @page { size: Letter; margin: 12mm; } /* or A4 */
+  }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+<article id="pfas-intro">
+  <p>
+    One of the newer contaminants to emerge in the water supply is a class of chemicals known as PFAS, which stands for “per- and polyfluoroalkyl substances.” PFAS comprise a wide variety of molecules with different physical and chemical properties and molecular weights, with perfluoroalkyl moieties as common structural features. The exact definition is somewhat unclear, as thousands of molecules fall under the PFAS classification and the boundaries are somewhat grey. The essential idea behind PFAS is that they are fluorinated carbon alkanes with a carbon backbone fully or mostly saturated with fluorine and either no or some other functional groups.
+  </p>
+</article>
+
+<article id="pfas-chemistry">
+  <h2>PFAS Chemistry</h2>
+  <p>
+    PFAS stands for Per- and Polyfluoroalkyl Substances. It is a family of thousands of different molecules with the defining feature being multiple fluorines attached to an alkyl chain. Because both fluorine and hydrogen can bond to carbon via a single valence electron, they are swappable on carbon backbones. Chemists can essentially take an alkyl chain and fluorinate it, replacing hydrogen with fluorine atoms.
+  </p>
+  <p>
+    For example: a normal fatty acid such as octanoic acid (C₇H₁₅COOH) has hydrogens on its carbon chain. Its PFAS cousin, PFOA (perfluorooctanoic acid, C₇F₁₅COOH), has all those hydrogens replaced by fluorines. PFAS are commonly produced through electrochemical fluorination or fluorotelomerization
+    <sup class="cite"><a href="#ref-5">[5]</a></sup>.
+  </p>
+
+  <p><strong>1. Strength:</strong></p>
+  <ul>
+    <li>C–H bonds are relatively weak (~410 kJ/mol) and can be broken down by enzymes, sunlight, or microbes.</li>
+    <li>C–F bonds are among the strongest in chemistry (~485 kJ/mol), resisting breakdown and persisting in the environment (“forever chemicals”).</li>
+    <li>Activating C–F decomposition requires very high temperatures (~1,000–1,250 °C / 1,832–2,282 °F).</li>
+  </ul>
+
+  <p><strong>2. Electronegativity:</strong></p>
+  <ul>
+    <li>Fluorine is the most electronegative element, pulling electrons strongly from carbon and giving fluoroalkyl molecules unique characteristics.</li>
+    <li>Strong inductive effects: CF₃CF₂OH (pKₐ ≈ 12) is much more acidic than its ethanol cousin (pKₐ ≈ 16).</li>
+    <li>C–F bonds are highly polarized with weak van der Waals forces, yielding molecules with very low surface energy. They resist interactions with other molecules (dipole, dispersion, or hydrogen bonding) — the “introverts” of molecules.</li>
+  </ul>
+
+  <p>
+    These properties create PFAS molecules that are extremely durable, resistant to chemicals, temperature, sunlight, and biodegradation, while repelling both oil and water. This durability makes PFAS useful in many products but also extremely difficult to dispose of. Studies report less-than-complete destruction of PFAS even at 930–980 °C (1,706–1,796 °F)
+    <sup class="cite"><a href="#ref-5">[5]</a></sup>.
+  </p>
+</article>
+
+<article id="pfas-usage">
+  <h2>PFAS Usage</h2>
+  <p>
+    PFAS products are widely used. In 2020, the United States manufactured or imported approximately 2.9 billion pounds of PFAS
+    <sup class="cite"><a href="#ref-5">[5]</a></sup>.
+  </p>
+  <p>
+    PFAS confer corrosion resistance, abrasion resistance, hydrophobicity, leveling, spreading, and wetting. Product examples include waterproof fabrics (nylon, yoga pants, carpets), shampoo, feminine hygiene products, mobile phone screens, wall paint, furniture, adhesives, food packaging, firefighting foam, and electrical wire insulation. The cosmetic industry also uses PFAS in most cosmetics and personal care products (lipstick, eyeliner, mascara, foundation, concealer, lip balm, blush, nail polish)
+    <sup class="cite"><a href="#ref-4">[4]</a>, <a href="#ref-5">[5]</a></sup>.
+  </p>
+</article>
+
+<article id="pfas-lifecycle">
+  <h2>PFAS Lifecycle and Routes of Exposure</h2>
+  <p>
+    PFAS have several lifecycle stages, each capable of releasing PFAS into the environment and resulting in biological exposure
+    <sup class="cite"><a href="#ref-5">[5]</a></sup>:
+  </p>
+  <ol>
+    <li>Precursor Chemical Production</li>
+    <li>PFAS Production</li>
+    <li>Product Manufacturing</li>
+    <li>Product Use</li>
+    <li>End-of-life management (composting, landfilling, recycling, thermal treatment)</li>
+  </ol>
+
+  <p><strong>Notable routes of exposure:</strong></p>
+  <ul>
+    <li>Human contact via food storage, cosmetics, or clothing.</li>
+    <li>
+      Constituent, intermediate, or degradation molecules released into the environment (airborne, solid, liquid).
+      <br>For example, side-chain fluorinated polymers can degrade into non-polymeric PFAS products. A study of molded “compostable” fiber bowls detected 6:2 FTOH and transformation products of fluorotelomer unsaturated carboxylic acids
+      <sup class="cite"><a href="#ref-5">[5]</a></sup>.
+    </li>
+    <li>Additional PFAS molecules may form during disposal attempts.</li>
+    <li>Landfill leaching.</li>
+    <li>Biosolids from wastewater treatment processes.</li>
+  </ul>
+</article>
+
+<article id="pfas-regulation">
+  <h2>PFAS Regulation</h2>
+  <p>
+    Global regulation varies. The EU is working to phase out all non-essential PFAS uses, with enforcement beginning in 2026
+    <sup class="cite"><a href="#ref-6">[6]</a>, <a href="#ref-8">[8]</a></sup>.
+    France has banned most PFAS in consumer products starting in 2026, with all textiles included by 2030
+    <sup class="cite"><a href="#ref-7">[7]</a></sup>.
+    The USA has enforceable limits for 6 PFAS molecules.
+  </p>
+  <p>
+    On April 10, 2024, EPA announced the final NPDWR for six PFAS. Legally enforceable Maximum Contaminant Levels (MCLs) were set for PFOA, PFOS, PFHxS, PFNA, and HFPO-DA (GenX), with a Hazard Index MCL for mixtures of PFHxS, PFNA, HFPO-DA, and PFBS
+    <sup class="cite"><a href="#ref-3">[3]</a>, <a href="#ref-5">[5]</a></sup>.
+    EPA also finalized non-enforceable Maximum Contaminant Level Goals (MCLGs) for these PFAS.
+  </p>
+  <p>
+    Out of thousands of PFAS molecules, only 6 are regulated in the USA. EU law allows sweeping regulation of PFAS classes, but in the US each molecule must be proven harmful before restriction under the Toxic Substance Control Act (TSCA). Section 6 requires EPA to show “unreasonable risk” for each chemical substance, not a class, forcing case-by-case evaluation
+    <sup class="cite"><a href="#ref-9">[9]</a>, <a href="#ref-10">[10]</a></sup>.
+  </p>
+</article>
+
+<article id="pfas-alternatives">
+  <h2>PFAS Alternatives</h2>
+  <p>
+    Research continues into PFAS substitutes. Candidate classes include:
+  </p>
+  <ul>
+    <li>Silicones and siloxanes (coatings, packaging)</li>
+    <li>Sulfosuccinates and other anionic surfactants (wetting agents)</li>
+    <li>Nonionic surfactants such as acetylenic diols (paints, varnishes)</li>
+    <li>Branched polymers</li>
+    <li>Hydrocarbon-based surfactants (cleaning agents)</li>
+    <li>Biologically derived surfactants (e.g., rhamnolipids)</li>
+    <li>Other materials under study: graphene, ceramics (boron nitride, titanium dioxide)</li>
+  </ul>
+  <p>
+    Each alternative has trade-offs in performance and cost
+    <sup class="cite"><a href="#ref-5">[5]</a></sup>.
+  </p>
+</article>
+
+
+    <article>
+      <p>
+        Another emerging toxin of interst is Microplastics. Much of the following is current theory as this
+        is a emerging environmental pollutant with active ongoing research.
+      </p>
+
+      <p>
+        It's difficult to overestimate the vastness of the different types of plastic polymers. Their molecular form has
+        differing effects on their molecular weight, strength, crystal-
+        linity, weatherability, and fragmentation as well as densities. Also to be considered is any UV resistant
+        additives
+        or other additives in the process. Accordingly, the fate, behavior and ecological impact of their generated MPs
+        in
+        the environment will also likely differ. <sup class="cite"><a href="#ref-1">[1]</a></sup>
+      </p>
+
+      <p>
+        Another thing that is difficult overestimate is how widely spread microplastics are throughout the world.
+      </p>
+
+      <p>
+        Because of the vast number of types of microplastics and how vast the ecosystems of the world that microplastics
+        exist I'm simply focusing on the environmental chemistry of MP's in a beach and marine environment in this
+        paper.
+      </p>
+    </article>
+    <article id="plastic-chemistry">
+      <h3>Plastic chemistry</h3>
+
+      <p>
+        The defining characteristic of a plastic substance is essentially consting of polymerized chains of functional
+        groups that repeat up to many thousands of times.
+        These functional groups can widely vary and the polymeric chains can be single or branched.
+      </p>
+
+      <p>
+        The differenct polymer functional groups give the plastic different characteristics.
+        For example, Amide polymers allow hydrogen bonds to form between the polymer chains which improves chains
+        packing together and makes the resulting substance durable and strong like Nylon.
+        Whereas a silicon atom in the polymer gives the resulting plastic product extremely good flexibility and heat
+        resistance and non-polar methyl groups make it hydrophic which gives it great uses in thigs like water resistant
+        outdoor products.
+      </p>
+
+      <p>
+        When it comes to polymeric branching, short chain branching disrupts inter-chain packing which provides more
+        flexibility and lower density which is good for plastic that can be rolloed into soft sheets like LDPE.
+        Long chain branching improves melt strength during processing: like in foams and films.
+        Non-branching polymers allows the chains pack closer together, which gives the resulting plastic high density
+        and strength.
+      </p>
+
+      <p>
+        The global production of plastic resins in recent years is about 300 MMT annually.<sup class="cite"><a
+            href="#ref-11">[11]</a></sup>
+      </p>
+
+
+    <table>
+        <caption>Table 1. Common Plastic Categories and Their Uses</caption>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Backbone</th>
+      <th>Examples</th>
+      <th>Common Uses</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Polyolefins</td>
+      <td>carbon–carbon only (no heteroatoms)</td>
+      <td>polyethylene (PE), polypropylene (PP), polystyrene (PS)</td>
+      <td>Grocery bags, soda bottles (HDPE, LDPE, PP), Styrofoam cups (PS)</td>
+    </tr>
+    <tr>
+      <td>Acrylics</td>
+      <td>carbon–carbon, with functional side groups (–CN, –COOR)</td>
+      <td>PMMA (Plexiglas), PAN (polyacrylonitrile)</td>
+      <td>Plexiglas windows (PMMA), acrylic sweaters (polyacrylonitrile fibers)</td>
+    </tr>
+    <tr>
+      <td>Polyesters</td>
+      <td>repeating ester linkages (–CO–O–)</td>
+      <td>PET, PBT, alkyd resins</td>
+      <td>Clothing fabric, PET drink bottles, food containers</td>
+    </tr>
+    <tr>
+      <td>Polyamides</td>
+      <td>repeating amide linkages (–CO–NH–)</td>
+      <td>Nylon-6,6, Nylon-6, aramids (Kevlar)</td>
+      <td>Nylon stockings, ropes, fishing nets, carpets</td>
+    </tr>
+    <tr>
+      <td>Polyurethanes</td>
+      <td>repeating urethane linkages (–NH–CO–O–)</td>
+      <td>foams, elastomers, coatings</td>
+      <td>Foam cushions, insulation, coatings, shoe soles</td>
+    </tr>
+    <tr>
+      <td>Silicones</td>
+      <td>siloxane chain (–Si–O–Si–)</td>
+      <td>PDMS, silicone elastomers</td>
+      <td>Bakeware, sealants, medical implants, lubricants</td>
+    </tr>
+    <tr>
+      <td>Halogenated plastics</td>
+      <td>carbon–carbon with halogen substituents</td>
+      <td>PVC (–CH₂–CHCl–), PTFE (–CF₂–CF₂–)</td>
+      <td>PVC pipes, vinyl flooring, PTFE non-stick cookware</td>
+    </tr>
+  </tbody>
+</table>
+    </article>
+
+    <article id="microplastics">
+      <h3>Microplastics</h3>
+
+      <p><strong>Rate by size.</strong> large-sized plastics (&gt;25 mm), medium-sized plastics (5–25 mm), MPs (1 µm–5
+        mm), and nanoplastics (&lt;1 µm).</p>
+
+      <p><strong>Primary and Secondary.</strong></p>
+      <p>
+        Primary microplastics include production pellets/powders and engineered plastic microbeads used in cosmetic
+        formulations, cleaning products, and industrial abrasives.
+        Purposefully manufactured as plastic fibers or particles in the micron size range and used to make products such
+        as facial cleansers, cosmetics, or airborne media; they have mainly been discharged into the environment via
+        wastewater stations.
+      </p>
+      <p>
+        In contrast, secondary microplastics come from larger plastic items that are degraded and consequently
+        fragmented—mostly due to weathering degradation—into microplastic particles.
+        The latter results from plastics of larger sizes that are broken down from various plastic products through
+        degradation (the physical action of sunlight and waves).
+      </p>
+      <p>
+        With the primary MPs, production volumes (Barnes et al., 2009) are tractable and their use is beginning to be
+        regulated (Rochman et al., 2015b). But far more abundant in the marine environment are the secondary MPs
+        <sup class="cite"><a href="#ref-11">[11]</a></sup>.
+      </p>
+      <p>
+        Conceivably, the inability of plastic particles to completely or gradually disintegrate has resulted in their
+        ubiquitous presence in the marine environment, and even in mountains, caves, deserts, and canyons on the
+        mainland.
+      </p>
+    </article>
+
+    <article id="secondary-mp-contributors">
+      <h3>Which Plastics Contribute Most to Secondary Microplastics</h3>
+
+      <p><em>Biggest microplastic contributors overall primarily due to volume produced:</em></p>
+
+      <ol>
+        <li>
+          <strong>Polyolefins (PE, PP, PS)</strong>
+          <ul>
+            <li>Packaging, disposable goods, foams</li>
+            <li>Enormous global tonnage + high fragmentation rates (packaging, foams)</li>
+            <li>Polystyrene foams (e.g., Styrofoam) are notorious for creating huge numbers of small beads.</li>
+            <li>
+              Surface water sampling as well as beach sampling generally finds PE and PP to be the dominant MPs, often
+              with some expanded PS
+              <sup class="cite"><a href="#ref-11">[11]</a></sup>
+            </li>
+            <li>PE and PP represent ~30% and ~27% of global resin manufacture (2015); many compounded products still
+              float in seawater.</li>
+            <li>The time for complete degradation of inert polymers such as PE or PP in the marine environment is
+              roughly several hundreds of years; degradation likely involves multiple processes with various kinetics
+              (Barnes et al., 2009; Gewert et al., 2015).</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Polyesters</strong>
+          <ul>
+            <li>Very high use in textiles &amp; bottles (especially textiles)</li>
+            <li>Fibers shed and sink or stay suspended; widely detected in sediments and biota</li>
+            <li>Laundry effluent (microfibers), bottle/film fragments</li>
+            <li>Synthetic textiles shed microfibers during laundering, which enter waterways.</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Polyamides (nylon)</strong>
+          <ul>
+            <li>Large textile/industrial use; tough fibers persist once released</li>
+            <li>Microfibers resist breakage; notable in marine settings (gear losses)</li>
+          </ul>
+        </li>
+      </ol>
+    </article>
+
+    <article id="beach-photic-environment">
+      <h3>Microplastics in the beach and photic environment</h3>
+
+      <p>
+        In a beach or photic environment, exposure to solar UVR is a significant mechanism that results in rapid
+        environmental degradation of polymers. Solar radiation initiates autocatalytic thermal oxidation responsible for
+        the degradation process
+        <sup class="cite"><a href="#ref-11">[11]</a></sup>.
+      </p>
+
+      <p>
+        Photo-oxidative degradation of polymers involves chromophoric groups that absorb UV light, become excited, lose
+        H, and then react with oxygen to form chain-scission radicals and peroxy radicals. These radicals chain-react
+        under continued UV exposure,
+        causing further breakdown and crosslinking of polymer chains and creating numerous new oxygen functional groups
+        on the backbone (aldehydes, ketones, carbonyls, etc.)
+        <sup class="cite"><a href="#ref-12">[12]</a></sup>.
+        Early in degradation, crystallinity often increases because the more disordered regions are more susceptible to
+        photo-oxidation and allow greater oxygen diffusion and this leads to more ordered molecules via degradation of the disorder.
+        <sup class="cite"><a href="#ref-11">[11]</a></sup>.
+      </p>
+
+      <p>
+        PE, PP, PS, PET, polycarbonate (PC), and poly(vinyl chloride) (PVC) all turn yellow to yellow-orange as a result
+        of oxidation due to degradation products of the polymer itself (as with PVC, PC, PS) or those from thermal
+        stabilizers used in the resin.
+      </p>
+
+      <p>
+        Degradation can be measured using FTIR: the carbonyl group (C=O) gives a strong band around 1700–1750 cm⁻¹; as
+        weathering progresses, the area under this peak grows, indicating more oxidation.
+      </p>
+
+      <p>
+        Photo-oxidation primarily affects the surface layer because UV does not penetrate deeply. This degraded surface
+        is then believed to delaminate via environmental/biotal weathering and swelling. In this surface-ablation mode,
+        large numbers of daughter
+        fragments with a narrow particle-size distribution are expected once weathering runs to completion
+        <sup class="cite"><a href="#ref-11">[11]</a></sup>.
+      </p>
+
+      <p>
+        These fragments are typically larger than the 5&nbsp;mm microplastic cutoff; however, it is plausible that the
+        cycle repeats, degrading smaller particles ad infinitum.
+      </p>
+    </article>
+
+    <article id="marine-environment">
+      <h3>Microplastics in the marine environment</h3>
+
+      <p>
+        In aqueous environments, plastic particles made of polyvinyl chloride, nylon, and polyethylene tend to sink
+        more, while polypropylene, polyethylene, and polystyrene often float or remain suspended. Alterations to density
+        through processes like
+        biofouling and adsorption of organic matter can increase sinking, affecting transport
+        <sup class="cite"><a href="#ref-13">[13]</a></sup>.
+      </p>
+
+      <p>
+        While biodegradation (and even hydrolysis) does occur at sea (Zettler et&nbsp;al., 2013), these reactions
+        proceed too slowly to produce significant environmental degradation of common plastics under outdoor conditions.
+        The beach zone is most conducive
+        to rapid weathering degradation
+        <sup class="cite"><a href="#ref-11">[11]</a></sup>.
+      </p>
+
+      <p>
+        No known mechanism exists for degradation—and thus removal—of plastics lying beyond the photic zone, suggesting
+        slow accumulation in the benthos over the years.
+      </p>
+
+      <ul>
+        <li>
+          Floating MPs typically accumulate encrusting foulants that ballast them over time, increasing apparent density
+          (Cózar et&nbsp;al., 2014), causing sinking in the water column (Ye &amp; Andrady, 1991; Francesca &amp; Fazey,
+          2016) and deposition in deep water or sediments.
+        </li>
+        <li>
+          Smaller meso- and nanoplastics can form homo-aggregates or co-aggregates with phytoplankton (Long et&nbsp;al.,
+          2015) and sink with the biomass. Transparent exopolymer particles (TEPs)—acidic, sticky polysaccharides
+          released mainly by phytoplankton
+          and bacteria—carry negative charge and effectively entrain dust, detritus, and other suspended matter,
+          flocculating MPs and promoting sinking.
+        </li>
+      </ul>
+
+      <p>
+        Floating in surface waters is therefore often a transient phase before particles are fouled, entangled with
+        other debris, grazed, or otherwise transported to benthic sediment.
+      </p>
+    </article>
+
+
+
+
+    <h3 id="refs-title">References</h3>
+
+    <ol id="references">
+      <li>
+        Interstate Technology &amp; Regulatory Council (ITRC). (2023, September).
+        PFAS — Per-and Polyfluoroalkyl Substances: Section 4 — Physical and Chemical Properties.
+        Retrieved from
+        <a
+          href="https://pfas-1.itrcweb.org/4-physical-and-chemical-properties/">https://pfas-1.itrcweb.org/4-physical-and-chemical-properties/</a>
+      </li>
+
+      <li>
+        (Authors). (2018). Main text_R1_2017-06-27. HAL.
+        <a
+          href="https://hal.science/hal-02067250/file/Main%20text_R1_2017-06-27.pdf">https://hal.science/hal-02067250/file/Main%20text_R1_2017-06-27.pdf</a>
+        <br>DOI:
+        <a href="https://doi.org/10.1016/j.envres.2018.10.017">https://doi.org/10.1016/j.envres.2018.10.017</a>
+      </li>
+
+      <li>
+        U.S. Environmental Protection Agency (EPA). (2025, May 21).
+        Per- and Polyfluoroalkyl Substances (PFAS). In Safe Drinking Water Act (SDWA).
+        Retrieved from
+        <a
+          href="https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas">https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas</a>
+      </li>
+
+      <li>
+        Wikipedia contributors. (n.d.). PFAS. In Wikipedia, The Free Encyclopedia.
+        Retrieved September 19, 2025, from
+        <a href="https://en.wikipedia.org/wiki/PFAS">https://en.wikipedia.org/wiki/PFAS</a>
+      </li>
+
+      <li>
+        U.S. Consumer Product Safety Commission. (2022).
+        Characterizing PFAS Chemistries, Sources, Uses, and Regulatory Trends in U.S. and International Markets [White
+        paper].
+        Retrieved from
+        <a
+          href="https://www.cpsc.gov/s3fs-public/CPSC-PFAS-WhitePaper.pdf">https://www.cpsc.gov/s3fs-public/CPSC-PFAS-WhitePaper.pdf</a>
+      </li>
+
+      <li>
+        European Chemicals Agency (ECHA). (n.d.).
+        Per- and polyfluoroalkyl substances (PFAS) [Hot Topics].
+        Retrieved from
+        <a
+          href="https://echa.europa.eu/hot-topics/perfluoroalkyl-chemicals-pfas">https://echa.europa.eu/hot-topics/perfluoroalkyl-chemicals-pfas</a>
+      </li>
+
+      <li>
+        Davenport, C. (2025, February 22).
+        France moves to ban ‘forever chemicals’ in consumer products.
+        The Washington Post. Retrieved from
+        <a
+          href="https://www.washingtonpost.com/climate-environment/2025/02/22/france-pfas-ban-forever-chemicals/">https://www.washingtonpost.com/climate-environment/2025/02/22/france-pfas-ban-forever-chemicals/</a>
+      </li>
+
+      <li>
+        European Environmental Bureau. (2023, October).
+        PFAS in Drinking Water: Briefing (Final).
+        Retrieved from
+        <a
+          href="https://www.eeb.org/wp-content/uploads/2023/10/PFAS-in-drinking-water-briefing-final-1.pdf">https://www.eeb.org/wp-content/uploads/2023/10/PFAS-in-drinking-water-briefing-final-1.pdf</a>
+      </li>
+
+      <li>
+        Environmental Defense Fund. (n.d.). Primer on the Lautenberg Act.
+        Retrieved from
+        <a
+          href="https://www.edf.org/sites/default/files/denison-primer-on-lautenberg-act.pdf">https://www.edf.org/sites/default/files/denison-primer-on-lautenberg-act.pdf</a>
+      </li>
+
+      <li>
+        U.S. Environmental Protection Agency (EPA). (n.d.).
+        Summary of the Toxic Substances Control Act.
+        Retrieved from
+        <a
+          href="https://www.epa.gov/laws-regulations/summary-toxic-substances-control-act">https://www.epa.gov/laws-regulations/summary-toxic-substances-control-act</a>
+      </li>
+
+      <li>
+        Andrady, A. L. (2017). The plastic in microplastics: A review.
+        Marine Pollution Bulletin, 119(1), 12–22.
+        <a href="https://doi.org/10.1016/j.marpolbul.2017.01.082">https://doi.org/10.1016/j.marpolbul.2017.01.082</a>
+      </li>
+
+      <li>
+        Yousif, E., &amp; Haddad, R. (2013). Photodegradation and photostabilization of polymers.
+        SpringerPlus, 2(398).
+        <a href="https://doi.org/10.1186/2193-1801-2-398">https://doi.org/10.1186/2193-1801-2-398</a>
+      </li>
+
+      <li>
+        Chandra, S., et al. (2024). Microplastics in water: Occurrence, fate and removal.
+        Science of the Total Environment, 934, Article 165515.
+        <a href="https://doi.org/10.1016/j.scitotenv.2024.165515">https://doi.org/10.1016/j.scitotenv.2024.165515</a>
+      </li>
+    </ol>
+
+  </div>
+
+</body>
+
+</html>
