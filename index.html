@@ -1,185 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <style>
-    body {
-      padding: 2rem;
-      font-family: Georgia, serif;
-      line-height: 1.5;
-    }
-
-    #app {
-      width: 8.5in;
-      margin: 0 auto;
-    }
-
-    #references>li {
-      margin-bottom: 1em;
-      line-height: 1.4;
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    th,
-    td {
-      border: 1px solid black;
-      padding: 6px;
-      text-align: left;
-    }
-
-    th {
-      background: #f2f2f2;
-    }
-
-    .title-block {
-      text-align: center;
-    }
-
-    .title-block h2 {
-      margin: 0 0 0.25rem;
-      padding: 0;
-    }
-
-    .title-block h3 {
-      margin: 0;
-    }
-
-    .title-block .byline {
-      margin-top: 0.2rem;
-      font-size: 1rem;
-      font-style: italic;
-      /* optional */
-      color: #444;
-      /* optional */
-    }
-
-    figure {
-      text-align: center;
-      margin: 1rem auto;
-    }
-
-    figure img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-
-    figure figcaption {
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      color: #444;
-    }
-
-    img {
-      max-width: 600px;
-      max-height: 400px;
-      width: auto;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-
-    body {
-      counter-reset: fig;
-    }
-
-    figure {
-      counter-increment: fig;
-    }
-
-    figcaption::before {
-      content: "Figure " counter(fig) ". ";
-      font-weight: 600;
-    }
-
-    h2 {
-      text-decoration: underline;
-    }
-
-    @media print {
-      .break-before-page {
-        break-before: page;
-        page-break-before: always;
-      }
-
-      .onepage,
-      .onepage * {
-        break-inside: avoid;
-        page-break-inside: avoid;
-      }
-
-      .onepage-wrap {
-        break-inside: avoid;
-        page-break-inside: avoid;
-        overflow: visible !important;
-      }
-
-      table.onepage {
-        font-size: 10pt;
-      }
-
-      table.onepage th,
-      table.onepage td {
-        padding: 2pt 4pt;
-      }
-
-      .no-split-fallback table.onepage {
-        display: inline-block;
-      }
-
-      @page {
-        size: Letter;
-        margin: 12mm;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <div id="app">
-    <div class="title-block">
-      <h2>PFAS and Microplastics: Emerging Substances of Concern.</h2>
-      <h3>A Selective Environmental Chemistry Review.</h3>
-      <p class="byline">Nicholas Kiermaier, · Fall 2025 <br /> University of New Orleans, Environmental Chemistry CHEM
-        5810</p>
-    </div>
-
-
-    <article>
-      <h2>Microplastics</h2>
-
-      <p>
-        A newly emerging contaminant of interest is microplastics (MPs). Despite plastic, and by extension
-        microplastics, being around for decades, society is now becoming more aware of their contaminant qualities.
-      </p>
-
-      <figure>
-        <img src="sources/publications.png" alt="Microplastics publications 2014–2024" />
-        <figcaption>
-          Number of publications for research on microplastics from 2014 to 2024
-          <sup class="cite"><a href="#ref-15">[15]</a></sup>
-        </figcaption>
-      </figure>
-
-      <p>
+<p>
         Microplastics are microscopic (5 mm or less) pieces of plastic that either enter the environment as
         microplastics or
-        are created as a result of environmental degradation of larger sized plastic sources. It's difficult to
+        are created as a result of environmental degradation of larger-sized plastic sources. It is difficult to
         overestimate the vastness of
-        different types of base plastic polymers that microplastics originate from. There are many variables to tweak to
+        different types of base plastic polymers from which microplastics originate. There are many variables to tweak to
         make a new type of plastic
         polymer: functional groups, backbone type, crosslinking, copolymers, additives, fillers, and processing
-        parameters all contribute to the formation of a polymer. The polymer’s molecular form then has differing effects
+        parameters all contribute to the formation of a polymer. The polymer's molecular form then has differing effects
         on its molecular weight, strength, crystallinity, weatherability, fragmentation, density, UV resistance, etc.
         Accordingly, the fates, behaviors, and ecological impacts of their generated MPs in the environment will also
         likely differ
@@ -187,17 +14,17 @@
       </p>
 
       <p>
-        Another thing that is difficult to overestimate is how widely distributed microplastics, and plastic in general,
-        have become throughout the world. According to recent research, some 360 million tons of plastic are generated
-        each year across the world and only 7% of this material is recycled, meaning that the bulk ends up in the
+        Another thing that is difficult to overestimate is how widely distributed microplastics and plastic in general are.
+        It has become widespread worldwide. According to recent research, some 360 million tons of plastic are generated
+        each year, around the globe, and only 7% of this material is recycled, meaning that the bulk ends up in the
         environment
         <sup class="cite"><a href="#ref-16">[16]</a></sup>.
-        Plastics, in general, can be very durable and last a long time. Microplastics are transported in water, air,
+        Plastics, in general, are very durable and can last a long time. Microplastics are transported in water, air,
         wind, and rain, and
-        can even remain suspended in the atmosphere. There are even studies showing they are transported by earthworms
+        can even remain suspended in the atmosphere. There are even studies showing earthworms transport them.
         <sup class="cite"><a href="#ref-16">[16]</a></sup>.
-        Microplastics have been found in soil and snow of remote pristine mountains of the French Pyrenees and in the
-        majority of remote locations in the USA, such as national parks and national wilderness regions. They have been
+        Microplastics have been found in the soil and snow of remote pristine mountains of the French Pyrenees and in the
+        The majority of remote locations in the USA are national parks and national wilderness regions. They have been
         found in all water systems tested
         <sup class="cite"><a href="#ref-16">[16]</a></sup>, and there is even a large floating garbage patch
         accumulation of
@@ -208,7 +35,7 @@
       <p>
         Because of the vast number of types of plastics and microplastics and the vast range of ecosystems they inhabit,
         an
-        exhaustive paper would be unfeasible; therefore, this paper is limited to selected topics of interest.
+        An exhaustive paper would be unfeasible; therefore, this paper is limited to selected topics of interest.
       </p>
     </article>
 
@@ -216,8 +43,8 @@
       <h3>Plastic Chemistry</h3>
 
       <p>
-        The defining characteristic of a plastic substance is polymerized chains of functional groups that repeat up to
-        many thousands of times. These functional groups can vary widely and the polymeric chains can be linear or
+        The defining characteristic of a plastic substance is polymerized chains of functional groups that repeat 
+        many thousands of times. These functional groups can vary widely, and the polymeric chains can be linear or
         branched.
       </p>
 
@@ -226,7 +53,7 @@
         For example, amide polymers allow hydrogen bonds to form between polymer chains, which improves chain packing
         and makes the resulting substance durable and strong (e.g., nylon). In contrast, including silicon in the
         backbone (silicones) yields excellent flexibility and heat resistance, and attached non-polar methyl groups make
-        it hydrophobic which is useful for water-resistant outdoor products.
+        it hydrophobic, which is useful for water-resistant outdoor products.
       </p>
 
       <p>
@@ -311,7 +138,7 @@
 
       <p><strong>Category by origin.</strong></p>
       <p>
-        Primary microplastics are those that emerge from the production stage as microplastics. This includes production
+        Primary microplastics are those that emerge from the production process. This includes production
         pellets/powders and engineered plastic microbeads used in cosmetic formulations, cleaning products, and
         industrial abrasives. Purposefully manufactured as plastic fibers or particles in the micron size range and used
         to make products such as facial cleansers, cosmetics, or airborne media, they have mainly been discharged into
@@ -319,12 +146,11 @@
       </p>
       <p>
         In contrast, secondary microplastics come from larger plastic items that are degraded and consequently
-        fragmented—mostly due to weathering—into microplastic particles. Larger plastics are broken down by sunlight,
-        waves, and other environmental forces.
+        fragmented—mostly due to weathering—into microplastic particles. Sunlight, waves, and other environmental factors break down larger pieces of plastic.
       </p>
       <p>
-        For primary MPs, production volumes are tractable and their use is beginning to be regulated. However, far more
-        abundant in the marine environment are the secondary MPs
+        For primary MPs, production volumes are tractable, and their use is beginning to be regulated. However, far more
+        Abundant in the marine environment are the secondary MPs
         <sup class="cite"><a href="#ref-11">[11]</a></sup>.
       </p>
       <p>
@@ -383,13 +209,13 @@
 
       <p>
         In beach or photic environments, exposure to solar UVR is a significant mechanism that results in rapid
-        environmental degradation of polymers. Solar radiation initiates autocatalytic thermal oxidation responsible for
+        environmental degradation of polymers. Solar radiation initiates autocatalytic thermal oxidation, which is responsible for
         the degradation process
         <sup class="cite"><a href="#ref-11">[11]</a></sup>.
       </p>
 
       <p>
-        Photo-oxidative degradation of polymers involves chromophoric groups that absorb UV light, become excited, lose
+        Photo-oxidative degradation of polymers involves chromophoric groups that absorb UV light, become excited, and lose
         H, and then react with oxygen to form chain-scission radicals and peroxy radicals. These radicals chain-react
         under continued UV exposure, causing further breakdown and crosslinking of polymer chains and creating numerous
         new oxygen-containing functional groups on the backbone (aldehydes, ketones, carbonyls, etc.)
@@ -402,7 +228,7 @@
 
       <p>
         PE, PP, PS, PET, polycarbonate (PC), and poly(vinyl chloride) (PVC) all turn yellow to yellow-orange as a result
-        of oxidation due to degradation products of the polymer itself (as with PVC, PC, PS) or those from thermal
+        of oxidation due to degradation products of the polymer itself (as with PVC, PC, and PS) or those from thermal
         stabilizers used in the resin.
       </p>
 
@@ -420,7 +246,7 @@
       </p>
 
       <p>
-        These fragments are typically larger than the 5&nbsp;mm microplastic cutoff; however, it is plausible that the
+        These fragments are typically larger than the 5 mm microplastic cutoff; however, it is plausible that the
         cycle repeats, degrading smaller particles ad infinitum.
       </p>
     </article>
@@ -443,16 +269,16 @@
         Floating MPs typically accumulate encrusting foulants that ballast them over time, increasing apparent density
         and causing sinking in the water column and deposition in deep water or sediments. Smaller meso- and
         nanoplastics can form homo-aggregates or co-aggregates with phytoplankton and sink with the biomass. Transparent
-        exopolymer particles (TEPs); acidic, sticky polysaccharides released mainly by phytoplankton and bacteria; carry
-        negative charge and effectively entrain dust, detritus, and other suspended matter, flocculating MPs and
+        exopolymer particles (TEPs), acidic, sticky polysaccharides released mainly by phytoplankton and bacteria, carry
+        a negative charge and effectively entrain dust, detritus, and other suspended matter, flocculating MPs and
         promoting sinking. Floating in surface waters is therefore often a transient phase before particles are fouled,
         entangled with other debris, grazed, or transported to benthic sediment
         <sup class="cite"><a href="#ref-11">[11]</a></sup>.
       </p>
 
       <p>No known mechanism exists for degradation, and thus removal, of plastics lying beyond the photic zone.
-        And with the ocean representing the final destination for most microplastics<sup class="cite"><a
-            href="#ref-16">[16]</a></sup>, this suggests that the ultimate
+        Moreover, with the ocean representing the final destination for most microplastics<sup class= "cite"><a
+            href=" #ref-16">[16]</a></sup>, this suggests that the ultimate
         fate of plastics and microplastics is a slow accumulation in the benthic sediment over the years. <sup class="cite"><a
             href="#ref-11">[11]</a></sup>.
 
@@ -468,7 +294,7 @@
       </p>
 
       <figure>
-        <img src="sources/pfas_pubs.jpg" alt="PFAS publications 2000–2023" />
+        <img src= "sources/pfas_pubs.jpg" alt= "PFAS publications 2000–2023"/>
         <figcaption>
           Number of publications and citation frequency for research on PFASs from 2000 to 2023
           <sup class="cite"><a href="#ref-14">[14]</a></sup>
@@ -491,7 +317,7 @@
       <ul>
         <li>C–H bonds are relatively weak (~410 kJ/mol) and can be broken down by enzymes, sunlight, or microbes.</li>
         <li>C–F bonds are among the strongest in chemistry (~485 kJ/mol), resisting breakdown and persisting in the
-          environment (“forever chemicals”).</li>
+          environment ("forever chemicals").</li>
         <li>Activating C–F decomposition requires very high temperatures (~1,000–1,250 °C / 1,832–2,282 °F).</li>
       </ul>
 
@@ -502,13 +328,13 @@
         <li>Strong inductive effects: CF₃CF₂OH (pKₐ ≈ 12) is much more acidic than its ethanol cousin (pKₐ ≈ 16).</li>
         <li>C–F bonds are highly polarized with weak van der Waals forces, yielding molecules with very low surface
           energy. They resist interactions with other molecules (dipole, dispersion, or hydrogen bonding)—the
-          “introverts” of molecules.</li>
+          "introverts" of molecules.</li>
       </ul>
 
       <p>
         These properties create PFAS molecules that are extremely durable, resistant to chemicals, temperature,
         sunlight, and biodegradation, while repelling both oil and water. This durability makes PFAS useful in many
-        products but also extremely difficult to dispose of. Studies report less-than-complete destruction of PFAS even
+        products, but also extremely difficult to dispose of. Studies report less-than-complete destruction of PFAS even
         at 930–980 °C (1,706–1,796 °F)
         <sup class="cite"><a href="#ref-5">[5]</a></sup>.
       </p>
@@ -549,9 +375,9 @@
       <ul>
         <li>Human contact via food storage, cosmetics, or clothing.</li>
         <li>
-          Constituent, intermediate, or degradation molecules released into the environment (airborne, solid, liquid).
+          Constituent, intermediate, or degradation molecules are released into the environment (airborne, solid, liquid).
           For example, side-chain fluorinated polymers can degrade into non-polymeric PFAS products; a study of molded
-          “compostable” fiber bowls detected 6:2 FTOH and transformation products of fluorotelomer unsaturated
+          "Compostable" fiber bowls detected 6:2 FTOH and transformation products of fluorotelomer unsaturated
           carboxylic acids
           <sup class="cite"><a href="#ref-5">[5]</a></sup>.
         </li>
@@ -573,8 +399,8 @@
       </p>
       <p>
         Out of thousands of PFAS molecules, only six are regulated in the USA. EU law allows sweeping regulation of PFAS
-        classes, but in the US each molecule must be proven harmful before restriction under the Toxic Substances
-        Control Act (TSCA). Section 6 requires EPA to show “unreasonable risk” for each chemical substance, not a class,
+        classes, but in the US, each molecule must be proven harmful before restriction under the Toxic Substances Control Act.
+        Control Act (TSCA). Section 6 requires EPA to show "unreasonable risk" for each chemical substance, not a class,
         forcing case-by-case evaluation
         <sup class="cite"><a href="#ref-9">[9]</a>, <a href="#ref-10">[10]</a></sup>.
       </p>
@@ -604,142 +430,11 @@
         innovation can outpace science. Both pollutants are examples of the difficulties of managing
         substances designed for high durability but lacking clear end-of-life and disposal pathways.
         Mitigation strategies must therefore
-        prioritize: prevention at the source, better product and waste design, and investment in safer alternatives.
-        Continued scientific research and global monitoring and coordinated policy action remain essential. Taken
+        Prioritize: prevention at the source, better product and waste design, and investment in safer alternatives.
+        Continued scientific research, global monitoring, and coordinated policy action remain essential. Taken
         together, the chemistry,
         distribution, and
-        persistence of microplastics and PFAS serve as a cautionary lesson: the properties that make materials useful
+        The persistence of microplastics and PFAS serves as a cautionary lesson: the properties that make materials useful
         can also make them environmental threats.
       </p>
     </article>
-
-    <h3 id="refs-title">References</h3>
-    <ol id="references">
-      <li>
-        Interstate Technology &amp; Regulatory Council (ITRC). (2023, September).
-        PFAS — Per- and Polyfluoroalkyl Substances: Section 4 — Physical and Chemical Properties.
-        Retrieved from
-        <a
-          href="https://pfas-1.itrcweb.org/4-physical-and-chemical-properties/">https://pfas-1.itrcweb.org/4-physical-and-chemical-properties/</a>
-      </li>
-
-      <li>
-        (2018). Main text_R1_2017-06-27. HAL.
-        <a
-          href="https://hal.science/hal-02067250/file/Main%20text_R1_2017-06-27.pdf">https://hal.science/hal-02067250/file/Main%20text_R1_2017-06-27.pdf</a><br>
-        DOI:
-        <a href="https://doi.org/10.1016/j.envres.2018.10.017">https://doi.org/10.1016/j.envres.2018.10.017</a>
-      </li>
-
-      <li>
-        U.S. Environmental Protection Agency (EPA). (2025, May 21).
-        Per- and Polyfluoroalkyl Substances (PFAS). In Safe Drinking Water Act (SDWA).
-        Retrieved from
-        <a
-          href="https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas">https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas</a>
-      </li>
-
-      <li>
-        Wikipedia contributors. (n.d.). PFAS. In Wikipedia, The Free Encyclopedia.
-        Retrieved September 19, 2025, from
-        <a href="https://en.wikipedia.org/wiki/PFAS">https://en.wikipedia.org/wiki/PFAS</a>
-      </li>
-
-      <li>
-        U.S. Consumer Product Safety Commission. (2022).
-        Characterizing PFAS Chemistries, Sources, Uses, and Regulatory Trends in U.S. and International Markets [White
-        paper].
-        Retrieved from
-        <a
-          href="https://www.cpsc.gov/s3fs-public/CPSC-PFAS-WhitePaper.pdf">https://www.cpsc.gov/s3fs-public/CPSC-PFAS-WhitePaper.pdf</a>
-      </li>
-
-      <li>
-        European Chemicals Agency (ECHA). (n.d.).
-        Per- and polyfluoroalkyl substances (PFAS) [Hot Topics].
-        Retrieved from
-        <a
-          href="https://echa.europa.eu/hot-topics/perfluoroalkyl-chemicals-pfas">https://echa.europa.eu/hot-topics/perfluoroalkyl-chemicals-pfas</a>
-      </li>
-
-      <li>
-        Davenport, C. (2025, February 22).
-        France moves to ban ‘forever chemicals’ in consumer products.
-        The Washington Post. Retrieved from
-        <a
-          href="https://www.washingtonpost.com/climate-environment/2025/02/22/france-pfas-ban-forever-chemicals/">https://www.washingtonpost.com/climate-environment/2025/02/22/france-pfas-ban-forever-chemicals/</a>
-      </li>
-
-      <li>
-        European Environmental Bureau. (2023, October).
-        PFAS in Drinking Water: Briefing (Final).
-        Retrieved from
-        <a
-          href="https://www.eeb.org/wp-content/uploads/2023/10/PFAS-in-drinking-water-briefing-final-1.pdf">https://www.eeb.org/wp-content/uploads/2023/10/PFAS-in-drinking-water-briefing-final-1.pdf</a>
-      </li>
-
-      <li>
-        Environmental Defense Fund. (n.d.). Primer on the Lautenberg Act.
-        Retrieved from
-        <a
-          href="https://www.edf.org/sites/default/files/denison-primer-on-lautenberg-act.pdf">https://www.edf.org/sites/default/files/denison-primer-on-lautenberg-act.pdf</a>
-      </li>
-
-      <li>
-        U.S. Environmental Protection Agency (EPA). (n.d.).
-        Summary of the Toxic Substances Control Act.
-        Retrieved from
-        <a
-          href="https://www.epa.gov/laws-regulations/summary-toxic-substances-control-act">https://www.epa.gov/laws-regulations/summary-toxic-substances-control-act</a>
-      </li>
-
-      <li>
-        Andrady, A. L. (2017). The plastic in microplastics: A review.
-        Marine Pollution Bulletin, 119(1), 12–22.
-        <a href="https://doi.org/10.1016/j.marpolbul.2017.01.082">https://doi.org/10.1016/j.marpolbul.2017.01.082</a>
-      </li>
-
-      <li>
-        Yousif, E., &amp; Haddad, R. (2013). Photodegradation and photostabilization of polymers.
-        SpringerPlus, 2(398).
-        <a href="https://doi.org/10.1186/2193-1801-2-398">https://doi.org/10.1186/2193-1801-2-398</a>
-      </li>
-
-      <li>
-        Chandra, S., et al. (2024). Microplastics in water: Occurrence, fate and removal.
-        Science of the Total Environment, 934, Article 165515.
-        <a href="https://doi.org/10.1016/j.scitotenv.2024.165515">https://doi.org/10.1016/j.scitotenv.2024.165515</a>
-      </li>
-
-      <li id="ref-14">
-        Yin, Z., Li, C., Li, X., &amp; Wang, C. (2025). Bibliometric Analysis of Per- and Polyfluoroalkyl Substances
-        (PFASs) from 2000 to 2023 Based on Web of Science Database.
-        <i>Water, 17</i>(1), 6.
-        <a href="https://doi.org/10.3390/w17010006">https://doi.org/10.3390/w17010006</a>
-      </li>
-
-      <li id="ref-15">
-        Gopalakrishnan, K. K., Sivakumar, R., &amp; Kashian, D. (2023). The Microplastics Cycle: An In-Depth Look at a
-        Complex Topic.
-        <i>Applied Sciences, 13</i>(19), 10999.
-        <a href="https://doi.org/10.3390/app131910999">https://doi.org/10.3390/app131910999</a>
-      </li>
-
-      <li>
-        Kumara, M., Chaudhary, V., Kumara, R., Chaudhary, V., &amp; Srivastav, A. L. (2025).
-        Microplastics, their effects on ecosystems, and general strategies for mitigation of microplastics: A review of
-        recent developments, challenges, and future prospects.
-        <i>Science of the Total Environment</i>, Article S2950305125000063.
-        <a href="https://doi.org/10.1016/j.scitotenv.2025.000063">https://doi.org/10.1016/j.scitotenv.2025.000063</a>
-      </li>
-
-      <li id="ref-17">
-        Great Pacific Garbage Patch. <i>Wikipedia, The Free Encyclopedia</i>. Retrieved September 19, 2025, from
-        <a
-          href="https://en.wikipedia.org/wiki/Great_Pacific_Garbage_Patch">https://en.wikipedia.org/wiki/Great_Pacific_Garbage_Patch</a>
-      </li>
-    </ol>
-  </div>
-</body>
-
-</html>
